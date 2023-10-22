@@ -7,7 +7,7 @@
 <html>
 <head>
 <jsp:include page="../common/head.jsp" flush="true" />
-<link href="${pageContext.request.contextPath}/css/top/top.css" rel="stylesheet">
+<link href="/css/top/top.css" rel="stylesheet">
 <title>exampleカード トップ</title>
 </head>
 <body>

@@ -7,8 +7,8 @@
 <html>
 <head>
 <jsp:include page="/WEB-INF/views/common/head.jsp" flush="true" />
-<link href="${pageContext.request.contextPath}/css/top/top.css" rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/customer/customer.css" rel="stylesheet">
+<link href="/css/top/top.css" rel="stylesheet">
+<link href="/css/customer/customer.css" rel="stylesheet">
 <title>exampleカード 申請情報の照会・変更</title>
 <script type="text/javascript">
 <!--
@@ -28,7 +28,7 @@
 				<div class="main-contents">
 					<div class="customer-info">
 						<div class="customer-info-title">
-							<img src="${pageContext.request.contextPath}/images/h1.gif">申請情報の詳細
+							<img src="/images/h1.gif">申請情報の詳細
 						</div>
 						<div class="customer-info-body">
 							<div class="customer-info-body-status">
@@ -142,15 +142,15 @@
 								</table>
 								<sec:authorize access="hasRole('SA')">
 									<c:if test="${applicationDto.applicationStatus == '2'}">
-										<a href="${pageContext.request.contextPath}/application/update01/input?id=${applicationDto.id}" class="btn btn-primary">変更申請</a>
+										<a href="/application/update01/input?id=${applicationDto.id}" class="btn btn-primary">変更申請</a>
 									</c:if>
 								</sec:authorize>
 							</div>
 							<br>
-							<a href="${pageContext.request.contextPath}/application/search01/search" class="btn btn-primary">お客様検索へ戻る</a>
+							<a href="/application/search01/search" class="btn btn-primary">お客様検索へ戻る</a>
 							<sec:authorize access="hasRole('SA')">
 								<c:if test="${applicationDto.applicationStatus == '1'}">
-									<a href="${pageContext.request.contextPath}/application/APLDL10/delete" class="btn btn-warning">取下げ</a>
+									<a href="/application/APLDL10/delete" class="btn btn-warning">取下げ</a>
 								</c:if>
 							</sec:authorize>
 						</div>

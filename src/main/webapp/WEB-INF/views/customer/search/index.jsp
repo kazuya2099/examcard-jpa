@@ -2,8 +2,8 @@
 <html>
 <head>
 <jsp:include page="../../common/head.jsp" flush="true" />
-<link href="${pageContext.request.contextPath}/css/top/top.css" rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/customer/customer.css" rel="stylesheet">
+<link href="/css/top/top.css" rel="stylesheet">
+<link href="/css/customer/customer.css" rel="stylesheet">
 <title>exampleカード お客様の検索</title>
 <script type="text/javascript">
 <!--
@@ -22,7 +22,7 @@
 				<div class="main-contents">
 					<div class="customer-search">
 						<div class="customer-search-title">
-							<img src="${pageContext.request.contextPath}/images/h1.gif">お客様の検索
+							<img src="/images/h1.gif">お客様の検索
 						</div>
 						<div class="customer-search-body">
 							<form:form name="search" method="GET" action="${pageContext.request.contextPath}/customer/search/execute" modelAttribute="searchCustomerForm">

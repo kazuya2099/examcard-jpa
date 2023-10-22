@@ -7,9 +7,9 @@
 <html>
 <head>
 <jsp:include page="../common/head.jsp" flush="true" />
-<link href="${pageContext.request.contextPath}/css/top/top.css"
+<link href="/css/top/top.css"
 	rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/user/user.css"
+<link href="/css/user/user.css"
 	rel="stylesheet">
 <title>exampleカード お客様情報の変更</title>
 </head>
@@ -45,7 +45,7 @@
 				<div class="main-contents">
 					<div class="user-info">
 						<div class="user-info-title">
-							<img src="${pageContext.request.contextPath}/images/h1.gif">お客様情報の照会・変更
+							<img src="/images/h1.gif">お客様情報の照会・変更
 						</div>
 						<div class="user-info-body">
 							<form:form action="${pageContext.request.contextPath}/user/complete" modelAttribute="userForm">

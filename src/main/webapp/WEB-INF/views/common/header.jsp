@@ -11,7 +11,7 @@
 			</div>
 			<div class="col-sm-8">
 				<div class="header-contents">
-					<form:form name="header" action="${pageContext.request.contextPath}/logout">
+					<form:form name="header" action="/logout">
 					<ul class="nav nav-pills nav-justified">
 						<li role="presentation"><a href="${pageContext.request.contextPath}/top"><span class="header-menu">トップ</span></a></li>
 						<li role="presentation"><a href="${pageContext.request.contextPath}/application/create01/input"><span class="header-menu">新規申請</span></a></li>

@@ -2,8 +2,8 @@
 <html>
 <head>
 <jsp:include page="../../../common/head.jsp" flush="true" />
-<link href="${pageContext.request.contextPath}/css/top/top.css" rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/customer/customer.css" rel="stylesheet">
+<link href="/css/top/top.css" rel="stylesheet">
+<link href="/css/customer/customer.css" rel="stylesheet">
 <title>exampleカード 申請情報の照会・変更</title>
 <script type="text/javascript">
 <!--
@@ -23,7 +23,7 @@
 				<div class="main-contents">
 					<div class="customer-info">
 						<div class="customer-info-title">
-							<img src="${pageContext.request.contextPath}/images/h1.gif">申請情報の詳細
+							<img src="/images/h1.gif">申請情報の詳細
 						</div>
 						<div class="customer-info-body">
 							<div class="customer-info-body-status">

@@ -7,16 +7,16 @@
 <html>
 <head>
 <jsp:include page="/WEB-INF/views/common/head.jsp" flush="true" />
-<link href="${pageContext.request.contextPath}/css/top/top.css"
+<link href="/css/top/top.css"
 	rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/customer/customer.css"
+<link href="/css/customer/customer.css"
 	rel="stylesheet">
 <title>exampleカード お客様情報の新規申請</title>
 <script type="text/javascript">
 <!--
 function back() {
 	var form = document.confirm;
-	form.action = "${pageContext.request.contextPath}/application/create01/input?back";
+	form.action = "/application/create01/input?back";
 	form.submit();
 	return true;
 }
@@ -40,7 +40,7 @@ function submit() {
 				<div class="main-contents">
 					<div class="customer-info">
 						<div class="customer-info-title">
-							<img src="${pageContext.request.contextPath}/images/h1.gif">お客様情報の新規申請
+							<img src="/images/h1.gif">お客様情報の新規申請
 						</div>
 						<div class="customer-info-body">
 							<form:form name="confirm" action="${pageContext.request.contextPath}/application/create01/confirm" modelAttribute="applicationCreate01Form">

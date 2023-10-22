@@ -7,8 +7,8 @@
 <html>
 <head>
 <jsp:include page="/WEB-INF/views/common/head.jsp" flush="true" />
-<link href="${pageContext.request.contextPath}/css/top/top.css" rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/customer/customer.css" rel="stylesheet">
+<link href="/css/top/top.css" rel="stylesheet">
+<link href="/css/customer/customer.css" rel="stylesheet">
 <title>exampleカード 申請情報の判定</title>
 <script type="text/javascript">
 <!--
@@ -32,7 +32,7 @@
 				<div class="main-contents">
 					<div class="customer-info">
 						<div class="customer-info-title">
-							<img src="${pageContext.request.contextPath}/images/h1.gif">申請情報の詳細
+							<img src="/images/h1.gif">申請情報の詳細
 						</div>
 						<form:form name="input" action="${pageContext.request.contextPath}/application/update02/input" modelAttribute="applicationUpdate02Form">
 						<div class="customer-info-body">
@@ -149,7 +149,7 @@
 								</table>
 							</div>
 							<br>
-							<a href="${pageContext.request.contextPath}/application/search02/search" class="btn btn-primary">申請情報の検索</a>
+							<a href="/application/search02/search" class="btn btn-primary">申請情報の検索</a>
 							<a href="#" onclick="submit();" class="btn btn-warning">判定登録</a>
 						</div>
 						<form:hidden path="id"/>

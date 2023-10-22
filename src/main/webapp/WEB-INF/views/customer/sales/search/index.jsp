@@ -2,8 +2,8 @@
 <html>
 <head>
 <jsp:include page="../../../common/head.jsp" flush="true" />
-<link href="${pageContext.request.contextPath}/css/top/top.css" rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/customer/customer.css" rel="stylesheet">
+<link href="/css/top/top.css" rel="stylesheet">
+<link href="/css/customer/customer.css" rel="stylesheet">
 <title>exampleカード 申請情報の検索</title>
 <script type="text/javascript">
 <!--
@@ -28,7 +28,7 @@ function submit(no) {
 				<div class="main-contents">
 					<div class="customer-search">
 						<div class="customer-search-title">
-							<img src="${pageContext.request.contextPath}/images/h1.gif">申請情報の検索
+							<img src="/images/h1.gif">申請情報の検索
 						</div>
 						<form:form name="search" method="GET" action="${pageContext.request.contextPath}/customer/sales/search/execute" modelAttribute="searchCustomerForm">
 						<div class="customer-search-body">
