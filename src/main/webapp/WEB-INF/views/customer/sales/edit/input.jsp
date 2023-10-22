@@ -2,8 +2,8 @@
 <html>
 <head>
 <jsp:include page="../../../common/head.jsp" flush="true" />
-<link href="${pageContext.request.contextPath}/css/top/top.css" rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/customer/customer.css" rel="stylesheet">
+<link href="/css/top/top.css" rel="stylesheet">
+<link href="/css/customer/customer.css" rel="stylesheet">
 <title>exampleカード お客様情報の変更申請</title>
 <script type="text/javascript">
 <!--
@@ -27,7 +27,7 @@ function submit() {
 				<div class="main-contents">
 					<div class="customer-info">
 						<div class="customer-info-title">
-							<img src="${pageContext.request.contextPath}/images/h1.gif">お客様情報の変更申請
+							<img src="/images/h1.gif">お客様情報の変更申請
 						</div>
 						<div class="customer-info-body">
 							<form:form name="input" action="${pageContext.request.contextPath}/customer/sales/edit/input" modelAttribute="customerApplicationForm">

@@ -7,8 +7,8 @@
 <html>
 <head>
 <jsp:include page="/WEB-INF/views/common/head.jsp" flush="true" />
-<link href="${pageContext.request.contextPath}/css/top/top.css" rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/customer/customer.css" rel="stylesheet">
+<link href="/css/top/top.css" rel="stylesheet">
+<link href="/css/customer/customer.css" rel="stylesheet">
 <title>exampleカード 申請情報の検索</title>
 <script type="text/javascript">
 <!--
@@ -33,7 +33,7 @@ function submit(no) {
 				<div class="main-contents">
 					<div class="customer-search">
 						<div class="customer-search-title">
-							<img src="${pageContext.request.contextPath}/images/h1.gif">申請情報の検索
+							<img src="/images/h1.gif">申請情報の検索
 						</div>
 						<form:form name="search" method="GET" action="${pageContext.request.contextPath}/application/search01/search" modelAttribute="applicationSearch01Form">
 						<div class="customer-search-body">
@@ -162,7 +162,7 @@ function submit(no) {
 											<td><c:out value="${customerApplication.tel1}"/>-<c:out value="${customerApplication.tel2}"/>-<c:out value="${customerApplication.tel3}"/></td>
 											<td><c:out value="${customerApplication.dispApplicationStatus}"/></td>
 											<td>
-												<a href="${pageContext.request.contextPath}/application/detail01/index?id=${customerApplication.id}" class="btn btn-primary">参照</a>
+												<a href="/application/detail01/index?id=${customerApplication.id}" class="btn btn-primary">参照</a>
 											</td>
 										</tr>
 										</c:forEach>

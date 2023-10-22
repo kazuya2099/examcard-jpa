@@ -7,8 +7,8 @@
 <html>
 <head>
 <jsp:include page="/WEB-INF/views/common/head.jsp" flush="true" />
-<link href="${pageContext.request.contextPath}/css/top/top.css" rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/customer/customer.css" rel="stylesheet">
+<link href="/css/top/top.css" rel="stylesheet">
+<link href="/css/customer/customer.css" rel="stylesheet">
 <title>exampleカード お客様情報の新規申請</title>
 <script type="text/javascript">
 <!--
@@ -76,7 +76,7 @@
 				<div class="main-contents">
 					<div class="customer-info">
 						<div class="customer-info-title">
-							<img src="${pageContext.request.contextPath}/images/h1.gif">お客様情報の新規申請
+							<img src="/images/h1.gif">お客様情報の新規申請
 						</div>
 						<div class="customer-info-body">
 							<form:form name="input" action="${pageContext.request.contextPath}/application/create01/input" modelAttribute="applicationCreate01Form">
@@ -225,7 +225,7 @@
 									<form:hidden path="id" />
 									<form:hidden path="updateDate" />
 								</div>
-								<a href="${pageContext.request.contextPath}/customer/top" class="btn btn-primary">戻る</a>
+								<a href="/customer/top" class="btn btn-primary">戻る</a>
 								<a onclick="submit();" class="btn btn-primary">確認する</a>
 							</form:form>
 						</div>

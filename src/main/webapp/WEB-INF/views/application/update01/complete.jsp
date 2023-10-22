@@ -8,9 +8,9 @@
 <html>
 <head>
 <jsp:include page="/WEB-INF/views/common/head.jsp" flush="true" />
-<link href="${pageContext.request.contextPath}/css/top/top.css"
+<link href="/css/top/top.css"
 	rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/customer/customer.css"
+<link href="/css/customer/customer.css"
 	rel="stylesheet">
 <title>exampleカード 申請情報の判定</title>
 </head>

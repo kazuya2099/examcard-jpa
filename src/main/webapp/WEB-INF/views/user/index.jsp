@@ -7,8 +7,8 @@
 <html>
 <head>
 <jsp:include page="../common/head.jsp" flush="true" />
-<link href="${pageContext.request.contextPath}/css/top/top.css" rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/user/user.css" rel="stylesheet">
+<link href="/css/top/top.css" rel="stylesheet">
+<link href="/css/user/user.css" rel="stylesheet">
 <title>exampleカード お客様情報の照会・変更</title>
 </head>
 <body>

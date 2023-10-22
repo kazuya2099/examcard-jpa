@@ -7,7 +7,7 @@
 <html>
 <head>
 <jsp:include page="../common/head.jsp" flush="true" />
-<link href="${pageContext.request.contextPath}/css/login/login.css" rel="stylesheet">
+<link href="/css/login/login.css" rel="stylesheet">
 <title>exampleカード エラー</title>
 </head>
 <body>
